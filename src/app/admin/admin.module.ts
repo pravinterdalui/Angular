@@ -8,18 +8,22 @@ import { FirstComponent } from './first/first.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 import { TemplateComponent } from './template/template.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from  '@angular/forms';
+
 @NgModule({
   declarations: [
     HomeComponent,
     UserComponent,
     FirstComponent,
     ReactiveComponent,
-    TemplateComponent
+    TemplateComponent,
+  
   ],
   imports: [
     CommonModule,
     AdminRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class AdminModule { }
